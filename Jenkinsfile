@@ -54,7 +54,6 @@ pipeline{
                }
             }
        }
-       sleep 10
        stage('Quality Gate Status Check : Sonarqube'){
          when { expression {  params.action == 'create' } }
             steps{
